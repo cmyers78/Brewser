@@ -17,7 +17,6 @@ class AppCoordinator: Coordinator {
 		rootViewController = UINavigationController()
 		
 		let mainVC = MainViewController()
-		mainVC.view.backgroundColor = .blue
 		rootViewController.pushViewController(mainVC, animated: true)
 	}
 	
