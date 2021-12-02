@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -96,10 +96,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10935AB1270F84950032CED0 /* Build configuration list for PBXNativeTarget "Brewser" */;
 			buildPhases = (
-				10B2EAA4270F92C100263CA8 /* ShellScript */,
 				10935A99270F84930032CED0 /* Sources */,
 				10935A9A270F84930032CED0 /* Frameworks */,
 				10935A9B270F84930032CED0 /* Resources */,
+				10B2EAA4270F92C100263CA8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 10935A94270F84930032CED0;
+			packageReferences = (
+				1081CF9E2759228800490F62 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 10935A9E270F84930032CED0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,7 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -376,6 +379,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1081CF9E2759228800490F62 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 10935A95270F84930032CED0 /* Project object */;
 }
