@@ -26,5 +26,7 @@ class AppCoordinator: Coordinator {
 		window.makeKeyAndVisible()
 	}
 	
+	
+	
 	// Possibly need to add array of coordinators to handle child coordinators in future
 }

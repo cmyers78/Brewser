@@ -171,7 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"Brewser.xcodeproj:1: error: SwiftLint not installed, download from https://github.com/realm/SwiftLint or run 'brew install swiftlint' from home directory.\"\n  exit 1\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
